@@ -513,6 +513,10 @@ button {
   gap: 24px;
 }
 
+.footer-label {
+  width: 264px;
+  height: 40px;
+}
 .footer-input-flex {
   display: flex;
 }
@@ -641,12 +645,6 @@ button {
   fill: #ffffff;
 }
 
-/* .close-icon-position {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 24px;
-} */
-
 .modal-content-text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -751,8 +749,6 @@ button {
 }
 
 .modal-chekbox {
-  display: flex;
-  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
