@@ -461,7 +461,7 @@ button {
 .footer-links {
   display: flex;
   flex-direction: column;
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .footer-social-title {
@@ -539,6 +539,13 @@ button {
   cursor: pointer;
   min-width: 165px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:active,
+.footer-button:focus {
+  background-color: #404bbf;
 }
 
 .footer-iput {
@@ -682,6 +689,7 @@ button {
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
 }
 
 .input-style:focus {
@@ -717,7 +725,6 @@ button {
   border-radius: 4px;
   width: 360px;
   height: 120px;
-  margin-bottom: 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -742,10 +749,8 @@ button {
 }
 
 .form-row {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .modal-chekbox {
@@ -773,10 +778,20 @@ button {
   fill: transparent;
 }
 
+.modal-policy {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .modal-policy:checked + .modal-chekbox .fake-chekbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+.modal-policy:focus + .modal-chekbox .fake-chekbox {
+  border-color: blue;
 }
 
 .modal-link {
@@ -810,4 +825,10 @@ button {
   cursor: pointer;
   min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:active,
+.modal-button:focus {
+  background-color: #404bbf;
 }
